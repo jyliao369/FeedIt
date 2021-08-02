@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: floralwhite;
+}
+
+/*  Below here stylizes the Header of both the Recipe and HTML website */
+#site-header-text {
+    padding: 30px;
+    background-color: lightskyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(circle, rgba(0,157,230,1) 47%, rgba(12,45,167,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+/* These stylize the main body */
+#sitemain {
+    display: flex;
+    flex-direction: row;
+}
+
+/* This stylizes the area where the results are displayed */
+#recipe-results-container, #drinks-results-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: floralwhite;
+    flex: 1 1 60%;
+}
+
+/* This stylizes the searchArea with Buttons */
+#searchArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btnSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This is specifically for the takeout where the cuisine section */
+#cuisineSect {
+    font-size: 10px;
+    padding: 20px;
+}
+
+/* This is where all the results will show on the main page */
+/* This is for the recipe site */
+/* I believe there classes are called item */
+/* this is the main body of each results */
+.item {
+    border-radius: 8px;
+    background-color: rgb(107 164 199);
+    padding: 15px;
+    overflow: hidden;
+    flex: 1 1 25%;
+    display: flex;
+    margin: 20px;
+    color: white;
+    flex-direction: column;
+}
+
+/* This customizes the image box that includes the image the header
+and the view button */
+#imgBx {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This customizes the different images in the results */
+#resultImg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+/* This is the header or the title of each result */
+.item h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* This customizes the view recipe button */
+.view-btn {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: #404041;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self: center;
+}
+
+/* This customizes the data in the results in the result boxes */
+.item data {
+    color: whitesmoke;
+    display: block;
+    margin: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    padding: 20px 40px 20px 20px;
+}
+
+/* This customizes the search history area*/
+#history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This customizes the buttons of the history search */
+#historyItem {
+    font-size: 25px;
+    width: 200px;
+    border-radius: 20px;
+    background: floralwhite;
+    color: darkblue;
+}
+
+#history-container h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: cornflowerblue;
+    background: floralwhite;
+    width: 285px;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#Ingredients {
+    flex: 1 1 40%
+}
+
+section {
+    display: flex;
+}
+
+
+.button-rounded-hover {
+    border: 0;
+    border-radius: 5000px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.35s ease;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  
+  .button-rounded-hover:before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: inherit;
+    background-color: #fefefe;
+    transition: all 0.3s;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  
+  .button-rounded-hover:after {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 5px solid #115b8d;
+    content: '';
+    border-radius: inherit;
+  }
+  
+  .button-rounded-hover:hover,
+  .button-rounded-hover:focus {
+    background-color: #115b8d;
+  }
+  
+  .button-rounded-hover:hover:before,
+  .button-rounded-hover:focus:before {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0.25;
+  }
+  
+.ingredients_section {
+    padding: 30px;
+    margin: 0px;
+    background-color: aliceblue;
+    width: 381px;
+}
+
+p {
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+#indexbg {
+    background: rgb(0,157,230);
+    background: radial-gradient(circle, rgba(0,157,230,1) 47%, rgba(12,45,167,1) 100%);
+
+  
+}
+
+#indexbg image {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#img_logo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 3%;
+ 
+}
+
+#frontpagebuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.frontpagebuttons {
+    flex: .1 1 30px;
+    background-color: white;
+    border: 0;
+    border-radius: 5000px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.35s ease;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            
+  }
+  .frontpagebuttons:hover {
+  
+    background-color: #ffa600;
+    border: 2px solid #043072;
+  }
+  
+#frontPageHeader {
+    position: relative;
+    margin-top: 10%;
+}
+
+#buttoncontainer {
+    font-size: large;
+}
+
+
+
+
+/* @media screen and (max-width: 768px) { */
+    @media screen and (max-width: 768px) {
+  /* Mobile Fix for Index */
+    #frontPageHeader {
+        position: relative;
+    }
+    #img_logo {
+       
+        width: 70%;
+      margin-top: 50%;
+    }
+    #indexbg {
+        background: rgb(0,157,230);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #frontpagebuttons {
+       margin: 50px;
+        flex-wrap: wrap;
+        flex-direction: column; 
+     }
+    .frontpagebuttons {
+        margin: 10px;
+      }
+ 
+      /* Fix for Recipt Page */
+      #sitemain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #recipe-sidebar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #cook {
+        width: 100%;
+
+    }
+    #recipe-results-containter {
+        display: flex;
+        flex-direction: row !important;
+    }
+    #sitemain {
+        display: flex;
+    }
+    .item {
+        flex: 1 1 100%;
+        width: 80%;
+        border-radius: 8px;
+        background-color: rgb(107 164 199);
+        padding: 1px;
+        overflow: hidden;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .item img {
+        border: 10px solid #2a3e4b;
+        height: 35%;
+    }
+    .item h1 {
+        text-align: center;
+        background: #2a3e4b;
+        padding: 5px 5px 18px 5px;
+    }
+    .item a {
+        display: flex;
+
+    }
+    .view-btn {
+        text-decoration: none;
+        text-align: center;
+        width: 130px;
+        padding: 10px 10px 10px 10px;
+        background-color: #404041;
+        color: whitesmoke;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 10px 10px 10px 28%;
+        border-radius: 4px;
+        align-self: flex-end;
+        justify-content: center;
+    }
+}
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 990;
+    justify-content:center
+  }
+  
+  .modal .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
+    background: rgba(0,0,0,0.85);
+  }
+  
+  .modal .modal_content {
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow: auto;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+    border-radius: 4px;
+    width: 520px; /* This just a default width */
+  }
+  
+  .modal .modal_content > h2 {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 20px 0 40px;
+    text-align: center;
+  }
+  
+  .modal .modal_content .buttons_wrapper {
+    padding: 20px;
+  }
+  
+  .modal .close_modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.5;
+    background: none;
+    border: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .modal .close_modal:hover {
+    opacity: 0.9;
+  }
