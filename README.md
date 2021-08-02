@@ -33,4 +33,8 @@ Have a craving for something to eat? Feed it! Feedit is an application for a use
 ### Live Website Link
 
 Live Link to the Github Website Live:
-https://jnordan132.github.io/FEEDIT/
+https://jyliao369.github.io/FeedIt/
+
+GitHub Repo:
+https://github.com/jyliao369/FeedIt
+
